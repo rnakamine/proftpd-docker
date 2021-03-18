@@ -2,9 +2,8 @@ version: "3.8"
 
 services:
   proftpd:
-    container_name: proftpd
     build:
-      context: ./docker/proftpd/
+      context: .
     command: ["proftpd", "-n"]
     ports:
       - "20:20"
